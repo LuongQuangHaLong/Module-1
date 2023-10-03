@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Nhập chuỗi:");
+        let arr = input.split("");
+        let newArr = [];
+        function xoaKyTu(params) {
+            for (let i = 0; i < arr.length; i++) {
+                if (isNaN(arr[i])) {
+                    newArr.push(arr[i]);
+                }
+            }
+            let newString = newArr.join("");
+            console.log(`Chuỗi sau khi xóa kí tự số: ${newString}`);
+        }
+        let output = xoaKyTu(arr)
+    </script>
+</body>
+
+</html>

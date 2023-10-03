@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input class="text" type="text">
+    <button onclick="render()">Save</button>
+    <script>
+        let arr=[]
+        function render() {
+            let text = document.getElementsByTagName("input").value;
+            let value = text.value;
+            if (value!='') {
+                arr.push(value)
+                text.value= "";
+            }
+            console.log(arr);
+        }
+    </script> -->
+    <input type="text" placeholder="Hãy nhập dữ liệu">
+    <button onclick="saveData()">Save</button>
+    <script>
+        let arr = [];
+
+        function saveData() {
+            let text = document.querySelector("input");
+            let value = text.value;
+            if (value != "") {
+                arr.push(value);
+                text.value = ""; 
+                console.log(arr);
+            }
+            
+        }
+    </script>
+</body>
+</html>

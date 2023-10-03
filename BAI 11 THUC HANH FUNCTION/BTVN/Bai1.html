@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Nhap Chuoi So Nguyen:");
+        let arr = input.split(' ');
+        console.log(arr);
+        let newArr = [];
+        function maxOnly(params) {
+            for (let i = 0; i < arr.length; i++) {
+                if (newArr.indexOf(arr[i])===-1) {
+                    newArr.push(arr[i]);
+                } else {
+                    newArr = newArr.filter(function (so) {
+                        return so !== arr[i];
+                    })
+                }
+            }
+            let maxNumber = newArr[0];
+            for (let i = 0; i < newArr.length; i++) {
+                if (newArr[i] > maxNumber) {
+                    maxNumber = newArr[i];
+                }
+            }
+            console.log(`So lon nhat va duy nhat la: ${maxNumber}`);
+        }
+        maxOnly(arr)
+        /* function timSoLonNhatDuyNhat(chuoi) {
+            // Tách chuỗi thành một mảng các số nguyên
+            var mangSo = chuoi.split(" ").map(Number);
+
+            // Tạo một đối tượng đếm cho các số
+            var demSo = {};
+
+            // Đếm số lần xuất hiện của từng số
+            for (var i = 0; i < mangSo.length; i++) {
+                var soHienTai = mangSo[i];
+                if (demSo[soHienTai]) {
+                    demSo[soHienTai]++;
+                } else {
+                    demSo[soHienTai] = 1;
+                }
+            }
+
+            // Tìm số lớn nhất và duy nhất
+            var soLonNhatDuyNhat = null;
+            for (var so in demSo) {
+                if (demSo[so] === 1 && (soLonNhatDuyNhat === null || so > soLonNhatDuyNhat)) {
+                    soLonNhatDuyNhat = so;
+                }
+            }
+
+            return soLonNhatDuyNhat;
+        }
+
+        // Sử dụng ví dụ
+        var input = prompt("Nhập chuỗi: ");
+        var output = timSoLonNhatDuyNhat(input);
+        console.log(output); // Kết quả: 3
+ */
+    </script>
+</body>
+
+</html>

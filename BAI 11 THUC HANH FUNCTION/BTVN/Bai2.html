@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemTraSoNguyenTo(number) {
+            if (number <= 1) {
+                return false;
+            } else if (number === 2) {
+                return true;
+            } else {
+                for (let i = 2; i < number; i++) {
+                    if (number % i === 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        function tinhTongSoNguyenToTrongChuoi(chuoi) {
+            let cacSo = chuoi.split(' ').map(Number);
+            let tong = 0;
+            for (let i = 0; i < cacSo.length; i++) {
+                if (kiemTraSoNguyenTo(cacSo[i])) {
+                    tong += cacSo[i];
+                }
+            }
+            return tong;
+        }
+        let chuoi = prompt("Nhập chuỗi chứa các số nguyên: ");
+        let tongSoNguyenTo = tinhTongSoNguyenToTrongChuoi(chuoi);
+        console.log(`Tổng các số nguyên tố trong chuỗi là: ${tongSoNguyenTo}`);
+
+    </script>
+</body>
+
+</html>

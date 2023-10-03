@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhGiaithua(number) {
+            if (number < 0) {
+                return "Không xác định";
+            }
+            if (number == 0 || number == 1) {
+                return 1;
+            }
+            let giaiThua = 1;
+            for (let i = 1; i <= number; i++) {
+                giaiThua *= i;
+            }
+            return giaiThua;
+        }
+        let input = parseInt(prompt("Nhập số:"));
+        let ketQua = tinhGiaithua(input);
+        console.log(`Giai thừa của ${input} là: ${ketQua}`);
+    </script>
+</body>
+
+</html>

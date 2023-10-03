@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    background-color: saddlebrown;
+}
+.long{
+    color: blue;
+}
+.dep{
+    background-color: brown;
+}
+.lewlew{
+    text-align-last: center;
+    background-color: darksalmon;
+    width: 150px;
+    height: 20px;
+    border: 5px dotted red;
+    padding: 30px;
+    margin: 50px;
+    display: inline-block
+}

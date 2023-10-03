@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string = prompt("Nhap chuoi:");
+        let newString = "";
+        for (let i = 0; i < string.length; i++) {
+            let charString = string.charAt(i);
+            if (charString === charString.toLowerCase()) {
+                newString += charString.toUpperCase();
+            } else {
+                newString += charString.toLowerCase();
+            }
+        }
+        console.log(newString);
+    </script>
+</body>
+
+</html>

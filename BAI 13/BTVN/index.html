@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Phân biệt HTML collection và Nodelist:
+   + Giống nhau:
+   - Cả hai đều là array-like object, chúng nhìn rất giống mảng nhưng thực chất không phải là mảng.
+   + Khác nhau:
+   - HTMLcollection có thể truy cập bằng tên, id hoặc index, trong khi NodeList chỉ truy cập được qua index.
+   - HTMLcollection chỉ chứa các element node, trong khi NodeList chứa mọi loại node.
+   - Khi thao tác DOM, những thay đổi có liên quan được update cho HTMLCollection (live), với NodeList (sử dụng querySelectorAll()) những thay đổi này sẽ không được update (static).
+</body>
+</html>

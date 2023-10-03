@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let count = 0;
+        while (count < 5) {
+            let number = parseInt(prompt(`Nhập số nguyên thứ ${count + 1}:`));
+
+            if (!isNaN(number) && Number.isInteger(number)) {
+                arr.push(number);
+                count++;
+            } else {
+                alert("Vui lòng nhập lại một số nguyên hợp lệ.");
+            }
+        }
+        console.log("Mảng số nguyên đã nhập:", arr)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function min(a, b, c) {
+            if (a > b && a > c) {
+                return a;
+            } else if (b > a && b > c) {
+                return b;
+            } else {
+                return c;
+            }
+        }
+        let so1 = parseInt(prompt("Nhập số thứ nhất:"));
+        let so2 = parseInt(prompt("Nhập số thứ hai:"));
+        let so3 = parseInt(prompt("Nhập số thứ ba:"));
+        let ketQua = min(so1, so2, so3);
+        console.log("Số nguyên nhỏ nhất là:", ketQua);
+    </script>
+</body>
+
+</html>

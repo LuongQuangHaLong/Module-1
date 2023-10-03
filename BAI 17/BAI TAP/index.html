@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background-color: aqua;
+        width: 400px;
+        height: 200px;
+        border-radius: 5%;
+    }
+
+    label {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <label for="name">Tên Sinh Viên:</label>
+        <input id="name" type="text"><br>
+        <label for="address">Địa chỉ:</label>
+        <input id="address" type="text"><br>
+        <label for="email">Email:</label>
+        <input id="email" type="text"><br>
+        <button onclick="saveStudent()">Save</button>
+    </div>
+    <table border="1px">
+        <thead>Danh Sách Sinh Viên</thead>
+        <tbody>
+            <tr>
+                <td>STT</td>
+                <td>Tên</td>
+                <td>Địa Chỉ</td>
+                <td>Email</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Long</td>
+                <td>Fukuoka</td>
+                <td>longdeptrai@gmail.com</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <script>
+        //  Tao ID ngau nhien
+        function randomID() {
+            let id = Math.floor(Math.random() * 100000);
+            return id;
+        }
+        let student = [];
+        function saveStudent() {
+            let nameValue = document.getElementById("name").value;
+            let addressValue = document.getElementById("address").value;
+            let emailValue = document.getElementById("email").value;
+            let studentInfo = {
+                name: nameValue,
+                address: addressValue,
+                email: emailValue,
+                id: randomID()
+            };
+            student.push(studentInfo);
+            console.log(student);
+        }
+        function showStudents() {
+            let text="";
+            for (let i = 0; i < student.length; i++) {
+                text+=
+               ` <tr>
+                <td>1</td>
+                <td>Long</td>
+                <td>Fukuoka</td>
+                <td>longdeptrai@gmail.com</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>`
+            }
+        }
+    </script>
+</body>
+
+</html>

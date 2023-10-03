@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    1.Toán tử == (Equality Operator - Toán tử bằng nhau):
+-Toán tử == được sử dụng để so sánh giá trị của hai biến hoặc giá trị.
+-Nếu giá trị của hai biến hoặc giá trị là bằng nhau, toán tử này trả về true.
+-Điều đáng lưu ý là toán tử == sẽ thực hiện ép kiểu ngầm định, tức là nếu hai biến có kiểu dữ liệu khác nhau, nó sẽ cố gắng chuyển đổi chúng thành cùng một kiểu để so sánh.
+    2.Toán tử === (Strict Equality Operator - Toán tử bằng nhau chặt chẽ):
+-Toán tử === được sử dụng để so sánh giá trị và kiểu dữ liệu của hai biến hoặc giá trị.
+-Toán tử này trả về true nếu cả giá trị và kiểu dữ liệu của hai biến hoặc giá trị đều giống nhau.
+-Toán tử === không thực hiện ép kiểu ngầm định, do đó nếu hai biến có kiểu dữ liệu khác nhau, nó sẽ trả về false.
+VD:
+const a = 5;
+const b = "5";
+
+console.log(a == b);   // true, vì giá trị của 'a' và 'b' bằng nhau sau khi ép kiểu
+console.log(a === b);  // false, vì 'a' có kiểu number và 'b' có kiểu string
+
+const a = null;
+const b = undefined;
+
+console.log(a == b);   // true, vì cả hai đều là giá trị "falsy"
+console.log(a === b);  // false, vì kiểu dữ liệu của 'a' là null và của 'b' là undefined
+     -->
+</body>
+
+</html>

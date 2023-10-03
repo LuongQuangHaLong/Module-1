@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Nhap chuoi:");
+        let cleanedString = string.toLowerCase().replace(/\s/g, "");
+        console.log(cleanedString);
+        let newString =cleanedString.split("").reverse().join("");
+        if (cleanedString === newString) {
+            console.log("Chuoi doi xung");
+        } else {
+            console.log("Khong phai chuoi doi xung");
+        }
+    </script>
+</body>
+</html>

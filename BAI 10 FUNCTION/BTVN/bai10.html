@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function kiemTra(nam) {
+            if (nam%4==0) {
+                return "Năm Nhuận."
+            } else {
+                return "Không Phải Năm Nhuân."
+            }
+        }
+        let input=+prompt("Nhập Năm:");
+        let ketQua=kiemTra(input);
+        console.log(`Năm ${input}: ${ketQua}`);
+    </script>
+</body>
+</html>

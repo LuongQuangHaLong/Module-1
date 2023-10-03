@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string1 = prompt("Nhap chuoi 1:");
+        let string2 = prompt("Nhap chuoi 2:");
+        /* let arr1 = string1.split(" ");
+        let arr2 = string2.split(" ");
+        for (let i = 0; i < arr1.length; i++) {
+                if (arr1[i] == arr2[i]) {
+                    console.log("2 chuoi giong nhau");
+                } else {
+                    console.log("2 chuoi khac nhau");
+                }
+            } */
+        let giongNhau = true;
+        if (string1.length !== string2.length) {
+            giongNhau = false;
+        } else {
+            for (let i = 0; i < string1.length; i++) {
+                if (string1[i] !== string2[i]) {
+                    giongNhau = false;
+                    break;
+                }
+            }
+        }
+        if (giongNhau) {
+            console.log("2 chuoi giong nhau");
+        } else {
+            console.log("2 chuoi khac nhau");
+        }   
+    </script>
+</body>
+
+</html>

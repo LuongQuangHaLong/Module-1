@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhDienTich(bankinh) {
+            return bankinh * bankinh * 3.14;
+        }
+        function tinhChuvi(bankinh) {
+            return bankinh * 2 * 3.14;
+        }
+        let input = +prompt("Nhập bán kính:")
+        let dienTich = tinhDienTich(input);
+        let chuVi = tinhChuvi(input);
+        console.log("Diện tích hình tròn là:" + dienTich);
+        console.log("Chu vi hình tròn là:" + chuVi);        
+    </script>
+</body>
+
+</html>

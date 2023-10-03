@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var number = +prompt("Nhap so N");
+        if (number <= 1) {
+            console.log(`${number} khong phai la so hoan hao`);
+        }
+        let tongCacuoc = 1;
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                tongCacuoc += i;
+            }
+        }
+        if (number == tongCacuoc) {
+            console.log(`${number} la so hoan hao`);
+        } else {
+            console.log(`${number} khong la so hoan hao`);
+        }   
+    </script>
+</body>
+
+</html>

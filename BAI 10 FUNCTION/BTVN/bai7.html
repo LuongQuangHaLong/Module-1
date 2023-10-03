@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function doiCho() {
+            let so1 = parseInt(prompt("Nhập số nguyên thứ nhất:"));
+            let so2 = parseInt(prompt("Nhập số nguyên thứ hai:"));
+            let arr = [so1, so2];
+            console.log("Mảng trước khi đổi chỗ:", arr);
+            let temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+            console.log("Mảng sau khi đổi chỗ:", arr);
+        }
+        doiCho();
+    </script>
+</body>
+
+</html>

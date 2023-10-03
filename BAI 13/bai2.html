@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .event{
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+        text-align: center;
+        display: none;
+        background-color: aqua;
+    }
+    .close{
+        margin: auto;
+        padding: auto;
+    }
+</style>
+<body>
+    <button class="icon" onclick="changeIcon()">Click</button>
+    <div onclick="deleteIcon()" class="event">
+        <p class="close">X</p>
+    </div>
+    <script>
+        function changeIcon() {
+            document.getElementsByClassName("event")[0].style.display = "block";
+        }
+        function deleteIcon() {
+            document.getElementsByClassName("event")[0].style.display = "none";        
+        }
+
+    </script>
+</body>
+</html>

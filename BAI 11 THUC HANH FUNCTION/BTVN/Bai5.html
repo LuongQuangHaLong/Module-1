@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function daoNguocChuoi(input) {
+            let mangTu = input.split(" ");
+            for (let i = 0; i < mangTu.length; i++) {
+                mangTu[i] = mangTu[i].split("").reverse().join("");
+            }
+            let ketQua = mangTu.join(" ");
+            return ketQua;
+        }
+        let input = prompt("Nhập chuỗi:");
+        let output = daoNguocChuoi(input);
+        console.log(output);
+    </script>
+</body>
+
+</html>

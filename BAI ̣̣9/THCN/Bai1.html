@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*    const arr = [3, 7, 2, 10, 5];
+           const soNguyento = [];  
+   
+           for (const num of arr) {
+               if (num <= 1) {
+                   continue; // Bỏ qua số nhỏ hơn hoặc bằng 1
+               }
+               let isPrime = true;
+               for (let i = 2; i*i <= num; i++) {
+                   if (num % i === 0) {
+                       isPrime = false;
+                       break;
+                   }
+               }
+               if (isPrime) {
+                   soNguyento.push(num);
+               }
+           }
+           console.log("Các số nguyên tố trong mảng là:", soNguyento); */
+        const arr = [3, 7, 2, 10, 5, 9];
+        for (const num of arr) {
+            //let isPrime = true
+            if (num < 2) {
+                //console.log(isPrime = false);
+                console.log(num, "khong la so nguyen to");
+            } else if (num == 2) {
+                console.log(num, " la so nguyen to");
+            } else if (num > 2) {
+                for (let i = 2; i < num; i++) {
+                    if (num % i == 0) {
+                        //isPrime = false
+                        console.log(num, "khong la so nguyen to");
+                        break;
+                    } else {
+                        console.log(num, " la so nguyen to");
+                    }
+                }
+                /* if (isPrime) {
+                    console.log(num, " la so nguyen to");
+                } else {
+                    console.log(num, "khong la so nguyen to");
+                } */
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

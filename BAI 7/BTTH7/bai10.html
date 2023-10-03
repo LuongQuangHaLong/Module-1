@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Số lượng số Fibonacci cần in ra
+        let count = 20;
+
+        // Khởi tạo hai biến ban đầu
+        let Fibonacci1 = 0;
+        let Fibonacci2 = 1;
+
+        // In ra hai số Fibonacci đầu tiên (0 và 1)
+        console.log(Fibonacci1);
+        console.log(Fibonacci2);
+
+        // Tính và in ra các số Fibonacci tiếp theo
+        for (let i = 2; i < count; i++) {
+            let temp = Fibonacci1 + Fibonacci2;
+            console.log(temp);
+            Fibonacci1 = Fibonacci2;
+            Fibonacci2 = temp;
+        }
+
+    </script>
+</body>
+
+</html>

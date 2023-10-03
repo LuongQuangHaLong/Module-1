@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> //Không Biết Cách Làm
+        /*    function tanSuat(kyTu) {
+               let count = {};
+               for (let i = 0; i < kyTu.length; i++) {
+                   if (count[i]) {
+                       count[i]++;
+                   } else {
+                       count[i] = 1;
+                   }
+               }
+               for (let i = 0; i < count.length; i++) {
+                   console.log(`Ký tự '${i}' xuất hiện ${count[i]} lần`);
+               }
+           }
+           let input = prompt("Nhập chuỗi ký tự:");
+           tanSuat(input); */
+        
+        let input=prompt("Nhap Chuoi:");
+        let arr = [];
+        function tanSuat(param) {
+        for (let i = 0; i < param.length; i++) {
+            if (arr.indexOf(param[i]) == -1) {
+                arr.push(param[i]);
+                console.log(arr);
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            let count=0;
+            for (let j = 0; j < param.length; j++) {
+                if (arr[i]==param[j]){
+                    count++;
+                }
+                
+            }
+           console.log(`Ky tu ${param[i]} xuat hien ${count} lan`); 
+        }
+    }
+    tanSuat(input)   
+    </script>
+</body>
+
+</html>

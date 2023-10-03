@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let soLuongphantu = parseInt(prompt("Nhap so luong phan tu:"));
+        let sum = 0;
+        for (let i = 0; i < soLuongphantu; i++) {
+            let number = parseInt(prompt("Nhap phan tu thu " + (i + 1) + ":"));
+            arr.push(number);
+            sum += arr[i];
+        }
+        let maxNumber = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > maxNumber) {
+                maxNumber = arr[i];
+            }
+        }
+        let average = sum / soLuongphantu;
+        console.log("Gia tri Max la:" + maxNumber);
+        console.log("Tra tri trung binh:" + average);
+    </script>
+</body>
+
+</html>

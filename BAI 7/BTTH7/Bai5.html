@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let diemKiemtra = +prompt("Nhap Diem Kiem Tra:");
+        let diemGiuaki = +prompt("Nhap Diem Giua Ki:");
+        let diemCuoiki = +prompt("Nhap Diem Cuoi Ki:");
+        let tongDiem = diemKiemtra + diemGiuaki * 2 + diemCuoiki * 3;
+        switch (true) {
+            case tongDiem / 6 >= 8:
+                document.write("Xếp loại Giỏi!");
+                break;
+            case tongDiem / 6 >= 6.5:
+                document.write("Xếp loại Khá!");
+                break;
+            case tongDiem / 6 >= 5:
+                document.write("Xếp loại Trung Bình!");
+                break;
+            default:
+                document.write("Xếp loại Yếu!");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

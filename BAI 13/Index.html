@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .event{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <p>Hello</p>
+    </div>
+    <button onclick="changeColor()">Click</button>
+    <script>
+        function changeColor() {
+            // document.getElementsByClassName("title")[0].style.color="red";
+            document.getElementsByClassName("title")[0].classList.toggle("event") 
+            setTimeout(() => {
+                test()
+            }, 3000);    
+        }
+        function test() {
+            document.getElementsByClassName("title")[0].classList.remove("event")
+        }
+    </script>
+</body>
+</html>

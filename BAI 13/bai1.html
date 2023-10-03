@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .images{
+        width: 200px;
+        height: 200px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="images">
+        <img id="img" onclick="changePic()" src="https://i.pinimg.com/1200x/35/ce/92/35ce92cc936579554a5f168f178eee38.jpg" alt="">
+    </div>
+    
+    <script>
+        let images = ["https://i.pinimg.com/1200x/35/ce/92/35ce92cc936579554a5f168f178eee38.jpg",
+        "https://i.pinimg.com/736x/dd/6c/3e/dd6c3e227d3eb09575aa403127f993cc.jpg","https://i.pinimg.com/236x/0a/15/48/0a1548f901cb46b3ecb3b26882d81023.jpg"
+    ]
+        let count=0;
+        function changePic(params) {
+            count++;
+            console.log(count);
+            if (count==3) {
+                count = 0;
+            }
+            document.getElementById("img").src=images[count]
+        }
+    </script>
+</body>
+</html>
