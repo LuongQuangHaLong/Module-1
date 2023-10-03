@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello học viên ra</title>
+</head>
+<body>
+    <!--\
+     1.Thẻ thuộc nhóm inline:
+    .Những thẻ thuộc nhóm inline là những thẻ cơ bản của HTML/XHTML, chỉ được dùng để chứa nội dung cho text hoặc các thẻ inline khác.
+    .Bản thân text cũng có thể coi thuộc nhóm inline.
+    .Là cách hiển thị nội dung bên trong của thẻ HTML trong 1 phạm vi xác định. Nghĩa là chiều dài của nó sẽ phụ thuộc vào độ lớn của dữ liệu. Vì vậy, các thẻ inline sẽ hiển thị nối tiếp nhau chứ không xuống hàng như block.
+    .Những thẻ thuộc nhóm inline nên được bao ngoài bởi nhóm các thẻ block, vì các thẻ block sẽ lo nhiệm vụ dàn trang web, còn các thẻ thuộc nhóm inline chỉ để hiển thị nội dung cho văn bản.
+    + Thẻ a <a></a>:
+    -Thẻ liên kết <a></a> dùng để tạo một liên kết từ trang web này sang trang web khác, từ vị trí này sang vị trí khác hay dùng để mở ra một object nào đó (có thể là file words, excel, pdf, mp3, movie,...), thẻ này có một thuộc tính bắt buộc:"href" Chứa đường dẫn cụ thể tới mục tiêu liên kết.
+    VD: <p><a href="www.rikkeiacademy.com">Đây là một liên kết</a></p>
+    + Thẻ image <img />:
+    -Thẻ hiển thị một image <img /> dùng để nhúng một ảnh thông qua thuộc tính src, thẻ này có 2 thuộc tính bắt buộc:
+      src: Chứa đường dẫn tham chiếu tới image.
+      alt: Được sử dụng như một văn bản thay thế khi image không hiển thị (hoặc không có sẵn).
+    -Cấu trúc của thẻ <img /> không có sử dụng thẻ đóng (không dùng <img></img>), mà sử dụng ký tự kết thúc là một khoảng trắng và ký tự "/".
+    VD:<p><img src="https://img.freepik.com/premium-photo/cute-baby-panda-bear-with-big-eyes-3d-rendering-cartoon-illustration_691560-4917.jpg" alt="Panda" /></p>
+    + Thẻ <br />:
+    -Thẻ ngắt đoạn văn bản <br /> dùng để xuống dòng văn bản trong cùng một đoạn văn.
+    -Cấu trúc của thẻ <br /> không có sử dụng thẻ đóng (không dùng <br></br>), mà sử dụng ký tự kết thúc là một khoảng trắng và ký tự "/".
+    VD: <p>RIKKEI<br />
+    ACADEMY.</p>
+    + Các thẻ <tt>, <i>, <b>, <big>, <small>, <em>, <strong>, <dfn>, <code>, <samp>, <kbd>, <var> và <cite> được dùng để định dạng kiểu cho font:
+    -<tt>	Kiểu chữ văn bản máy
+    -<i>	Kiểu chữ in nghiêng
+    -<b>	Kiểu chữ đậm
+    -<big>	Kiểu chữ lớn
+    -<small>	Kiểu chữ nhỏ
+    -<em>	Dùng để nhấn mạnh văn bản
+    -<strong>	Hiển thị hình ảnh mạnh, mục đích đánh dấu chữ
+    -<dfn>	Dùng cho thuật ngữ
+    -<code>	Kiểu code trong máy tính
+    -<samp>	Kiểu sample trong máy tính
+    -<kbd>	Kiểu bàn phím
+    -<var>	Kiểu biến số
+    -<cite>	Dùng cho văn bản trích dẫn
+    + Thẻ <q>: định nghĩa một đoạn trích dẫn ngắn.Trình duyệt sẽ chèn vào đoạn trích dẫn một cặp dấu ngoặc kép.
+    VD: <p>Đây là một đoạn text <q>đây là đoạn trích dẫn</q></p>
+    + Thẻ <span>: được sử dụng để nhóm các inline trong văn bản HTML.Ta có thể dùng span kèm với css để định dạng một phần nội dung trong văn bản HTML          
+    VD: <p>Đây là đoạn text có <span class="red">sử dụng</span> span.</p>
+    + Thẻ <u>: được dùng để gạch dưới text.
+    VD: <u>Đây là text được gạch dưới.</u>
+    + Thẻ <textarea>: dùng để nhập nhiều dòng văn bản.
+    -Kích thước của vùng văn bản có thể được xác định bởi các thuộc tính rows và cols, và cũng có thể điều chỉnh thông qua width và height trong css.
+    VD:<textarea rows="5" cols="20">Bạn đang xem thẻ html textarea, là text có thể nhập được văn bản, và có thể chứa rất nhiều dòng...</textarea>    
+     2. Thẻ thuộc nhóm block: là các thẻ dùng để sắp xếp bố cục cho trang web.
+     .Là cách hiển thị của một thẻ HTML trên trình duyệt sẽ ở dạng khối, có độ dài 100% và có chiều cao phụ thuộc vào nội dung nằm bên trong.
+     .Điều này có nghĩa rằng tất cả những thẻ HTML(block) nằm phía dưới khi hiển thị lên trình duyệt sẽ nằm ở một hàng khác.    
+    + Thẻ <hx>: định dạng tiêu đề.
+    -Gồm các thẻ từ <h1> cho đến <h6>, được sử dụng để định nghĩa tiêu đề cho nội dung HTML, giúp cho trình duyệt nhận biết được tiêu đề của một nội dung.
+    + Thẻ <p>: định dạng đoạn văn bản.
+    -Giúp trình duyệt xác định được đoạn văn bản trong trang HTML, thẻ này chỉ có thể chứa các thẻ thuộc nhóm inline, gồm: text, image, link, button,....
+    + Thẻ <div>: phân chia khu vực.
+    -Ta có thể hiểu đây là sự phân chia khu vực hay vùng, sự phân chia này sẽ giúp cho trình duyệt hiểu rõ những vùng được bố cục trên trang web..
+    + Thẻ <dl>, <dt>, <dd>: xác định danh sách.
+    -Sử dụng cho danh sách có các mục và có nội dung mô tả cho các mục.
+    + Thẻ <ol>, <li>: danh sách có thứ tự.
+    -Được sử dụng cho danh sách có thứ tự.
+    + Thẻ <ul>, <li>: danh sách không có thứ tự.
+    -Được sử dụng cho danh sách không có thứ tự.
+    + Thẻ <nav>: xác định menu link điều hướng (navigation).
+    -Chứa các liên kết giữa các trang với nhau.
+    + Thẻ <header>: xác định phần đầu trang web.
+    -Chứa tất cả phần đầu của trang web, gồm: logo, dòng mô tả, liên kết, ...
+    + Thẻ <section>: xác định khu vực có nội dung.
+    -Bao ngoài các nội dung lớn thường có chưa tiêu đề.
+    + Thẻ <article>: xác định một bài viết, một nội dung riêng biệt.
+    -Nội dung gồm các tin tức chi tiết, bài báo, ...
+    + Thẻ <aside>: xác định nội dung phụ bên cạnh nội dung chính (phần sidebar).
+    -Tất cả phần sidebar chứa liên kết, banner, ...
+    + Thẻ <footer>: xác định phần nội dung cuối trang web.
+    -Chứa tất cả phần cuối của trang web, gồm: liên kết phụ, logo, copyright, thông tin liên hệ, ...
+    + Thẻ <figure> - <figcaption>: xác định hình ảnh có chú thích.
+    -Giải thích rõ nghĩa hơn cho image.
+    + Thẻ <table>: được dùng để tạo một bảng HTML
+    - Thẻ <table> đơn giản có chứa một hoặc nhiều <tr>, <th> và <td>, trong đó:
+      <tr> xác định hàng của table.
+      <th> xác định phần tử tiêu đề của table.
+      <td> xác định phần tử nội dung của table       
+-->
+</body>
+</html>
