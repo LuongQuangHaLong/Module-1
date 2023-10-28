@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+
+<body>
+  <div class="register-box">
+    <h2>Đăng Ký</h2>
+    <div class="register-form">
+      <div class="user-box">
+        <input type="text" id="name" name="" required="">
+        <label>Tên Đăng Nhập</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="email" name="" required="">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" id="password" name="" required="">
+        <label>Mật Khẩu</label>
+      </div>
+      <div class="user-box">
+        <input type="password" id="confirmPassword" name="" required="">
+        <label>Xác Nhận Mật Khẩu</label>
+      </div>
+      <div class="check-box">
+        <input type="checkbox" name="" id="check">
+        <label for="">Bạn đồng ý với Nội Quy Shop!</label>
+      </div>
+      <div id="error-message-check" style="color: red; text-align: center;"></div>
+      <button onclick="register()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Xác Nhận
+      </button>
+    </div>
+  </div>
+  <script src="../js/register.js"></script>
+</body>
+
+</html>
